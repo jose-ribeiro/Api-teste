@@ -26,4 +26,8 @@ public class ClienteService {
     public List<Cliente> listar(){
         return clienteRepositorio.findAll();
     }
+
+    public Cliente salvar(Cliente cliente){
+        return  clienteRepositorio.save(cliente);
+    }
 }
