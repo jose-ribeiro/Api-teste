@@ -1,10 +1,7 @@
 package com.bancktest.entidades;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serializable;
 @NoArgsConstructor
@@ -12,6 +9,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Entity
+@ToString
 @Table(name = "tbCliente")
 public class Cliente implements Serializable {
     private static final long serialVersionUID = 1L;
