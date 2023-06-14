@@ -21,7 +21,7 @@ public class ApiTesteApplication implements CommandLineRunner {
 	ClienteRepositorio clienteRepositorio;
 	@Override
 	public void run(String... args) throws Exception {
-		Cliente cli1 = new Cliente(null,"jose", 25);
+		Cliente cli1 = new Cliente(null,"jose","01372137270" ,25);
 
 		clienteRepositorio.saveAll(Arrays.asList(cli1));
 	}

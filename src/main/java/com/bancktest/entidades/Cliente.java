@@ -9,7 +9,6 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Entity
-@ToString
 @Table(name = "tbCliente")
 public class Cliente implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -17,5 +16,6 @@ public class Cliente implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
+    private String cpf;
     private Integer idade;
 }
