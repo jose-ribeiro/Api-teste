@@ -13,8 +13,9 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Getter
 @Setter
-@MappedSuperclass
-public abstract class Conta implements Serializable {
+@Entity
+@Table(name = "tb_conta")
+public class Conta implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -23,6 +24,7 @@ public abstract class Conta implements Serializable {
     private Integer ag;
     private Integer conta;
     private double saldo = 0;
+    private TipoConta tipoConta;
 
 
 }
