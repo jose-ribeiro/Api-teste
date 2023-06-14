@@ -24,8 +24,8 @@ public class ContaService {
         return contaRepositorio.findAll();
     }
 
-    public Conta salvar(Conta contaCorrente){
-        return  contaRepositorio.save(contaCorrente);
+    public Conta salvar(Conta conta){
+        return  contaRepositorio.save(conta);
     }
 
 
