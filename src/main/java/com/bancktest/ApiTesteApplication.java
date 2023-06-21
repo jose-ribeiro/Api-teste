@@ -31,7 +31,8 @@ public class ApiTesteApplication implements CommandLineRunner {
 	EnderecoRepositorio enderecoRepositorio;
 	@Override
 	public void run(String... args) throws Exception {
-		Cliente cli1 = new Cliente(null,"jose","01372137270" ,25);
+		Cliente cli1 = new Cliente(null,"jose","01372137270","03/05/1994" );
+		cli1.getTelefones().addAll(Arrays.asList("(92)99614-0643", "(92)98419-5060"));
 
 		clienteRepositorio.saveAll(Arrays.asList(cli1));
 

@@ -4,12 +4,13 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
+import java.util.*;
+
 @NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 @Entity
-@Table(name = "tbCliente")
+@Table(name = "tb_Cliente")
 public class Cliente implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
@@ -17,5 +18,16 @@ public class Cliente implements Serializable {
     private Integer id;
     private String nome;
     private String cpf;
-    private Integer idade;
+    private String datanascimeto;
+
+    private Set<String> telefones = new HashSet<>();
+
+
+
+    public Cliente(Integer id, String nome, String cpf, String datanascimeto) {
+        this.id = id;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.datanascimeto = datanascimeto;
+    }
 }

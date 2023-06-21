@@ -1,8 +1,8 @@
 package com.bancktest.entidades.entidadeBanco;
 
 public enum TipoConta {
-    CONTACORRENTE(0, "Conta Corrente"),
-    CONTAPOUPANCA(1, "Conta poupança");
+    CONTACORRENTE(1, "Conta Corrente"),
+    CONTAPOUPANCA(2, "Conta poupança");
 
     private Integer cod;
     private String descricao;
