@@ -20,6 +20,7 @@ public class Conta implements Serializable {
     private Integer tipoConta;
 
     public Conta(Integer id, Integer ag, Integer conta, double saldo, TipoConta tipoConta) {
+        super();
         this.id = id;
         this.ag = ag;
         this.conta = conta;

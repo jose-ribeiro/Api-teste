@@ -20,7 +20,12 @@ public class Cliente implements Serializable {
     private String cpf;
     private String datanascimeto;
 
+
     private Set<String> telefones = new HashSet<>();
+
+    @OneToMany(mappedBy = "cliente")
+    private List<Endereco> enderecos = new ArrayList<>();
+
 
 
 

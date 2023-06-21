@@ -1,6 +1,7 @@
 package com.bancktest.entidades;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -26,4 +27,11 @@ public class Endereco implements Serializable {
     private String Bairro;
     private String Cidade;
     private String estado;
+
+    @JsonIgnore
+    @ManyToOne
+    @JoinColumn(name = "cliente_id")
+    private Cliente cliente;
+
+
 }

@@ -39,7 +39,7 @@ public class ApiTesteApplication implements CommandLineRunner {
 		Conta conta01 = new Conta(null, 1010,1,0, TipoConta.toEnum(1));
 		corrRepositorio.saveAll(Arrays.asList(conta01));
 
-		Endereco end01 = new Endereco(null,"Rua 10", 10, "B", "Centro", "Curitiba","PR");
+		Endereco end01 = new Endereco(null,"Rua 10", 10, "B", "Centro", "Curitiba","PR",cli1);
 
 		enderecoRepositorio.saveAll(Arrays.asList(end01));
 
